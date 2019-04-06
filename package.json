@@ -1,0 +1,44 @@
+{
+  "name": "tour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "migration:up": "sequelize db:migrate",
+    "migration:down": "sequelize db:migrate:undo",
+    "migration:reset": "sequelize db:migrate:undo:all",
+    "seed:up": "sequelize db:seed:all",
+    "seed:down": "sequelize db:seed:undo:all",
+    "make:migration": "sequelize migration:generate",
+    "make:seed": "sequelize seed:generate"
+  },
+  "keywords": [
+    "Tour"
+  ],
+  "author": "Majid Ganji <majidganji313@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "pg": "^7.9.0",
+    "pino": "^5.12.2",
+    "pino-tee": "^0.2.2",
+    "sequelize": "^5.2.12",
+    "sequelize-cli": "^5.4.0",
+    "sequelize-paginate": "^1.1.5",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

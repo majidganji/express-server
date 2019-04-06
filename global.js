@@ -1,0 +1,1 @@
+global.perPageItem = 20
