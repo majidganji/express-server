@@ -8,10 +8,10 @@ module.exports = {
 		host: process.env.DB_HOST,
 		port: process.env.DB_PORT,
 		dialect: process.env.DB_dialect,
-		operatorsAliases: false,
 		define: {
 			underscored: true
 		},
+		// operatorsAliases: false,
 	},
 	test: {
 		username: process.env.DB_USER,
@@ -20,10 +20,10 @@ module.exports = {
 		host: process.env.DB_HOST,
 		port: process.env.DB_PORT,
 		dialect: process.env.DB_dialect,
-		operatorsAliases: false,
 		define: {
 			underscored: true
-		}
+		},
+		// operatorsAliases: false,
 	},
 	production: {
 		username: process.env.DB_USER,
@@ -32,9 +32,9 @@ module.exports = {
 		host: process.env.DB_HOST,
 		port: process.env.DB_PORT,
 		dialect: process.env.DB_dialect,
-		operatorsAliases: false,
 		define: {
 			underscored: true
-		}
+		},
+		// operatorsAliases: false,
 	},
 }

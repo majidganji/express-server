@@ -1,10 +1,9 @@
 const express = require('express')
 const router = express.Router()
+const db = require('../../../../models')
 
-router.get('/', (req, res) => {
-    return res.success({
-        ok: true
-    }, 'Lorem')
+router.get('/', async (req, res) => {
+    
 })
 
 module.exports = router;

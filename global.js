@@ -1,1 +1,0 @@
-global.perPageItem = 20
